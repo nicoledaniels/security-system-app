@@ -1,10 +1,13 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { Tabs } from './app/config/router'
 
-export default class App extends React.Component {
+export default class Feed extends React.Component {
   render() {
-    return <Tabs />;
+    return (
+      <View style={styles.container}>
+        <Text>This is the Feed Page</Text>
+      </View>
+    );
   }
 }
 
