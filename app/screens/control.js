@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Header } from 'react-native-elements'
+import ArmDisarmButton from '../components/ArmDisarmButton';
 
 export default class Control extends React.Component {
   render() {
@@ -9,9 +10,7 @@ export default class Control extends React.Component {
         <Header
           centerComponent={{text: 'On/Off', style: {color: '#fff'}}}
         />
-        <View style={styles.textContainer}>
-          <Text>This is the Control Page</Text>
-        </View>
+        <ArmDisarmButton />
       </View>
     );
   }
